@@ -1,0 +1,9 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+#header_lista:hover{
+    font-weight: bolder;
+}
+#lista_header{
+    font-family: 'Poppins', sans-serif;
+}
