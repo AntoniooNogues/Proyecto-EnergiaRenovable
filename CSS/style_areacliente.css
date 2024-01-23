@@ -1,0 +1,24 @@
+
+footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+footer a{
+    color: #3C8732;
+}
+footer a:hover{
+    color: #2b5526;
+    font-weight: bolder;
+}
+footer a:visited{
+    color: #1d3a1a;
+}
+
+footer p{
+    color: #3C8732;
+}
+footer p:hover{
+    color: #2b5526;
+    font-weight: bolder;
+}
