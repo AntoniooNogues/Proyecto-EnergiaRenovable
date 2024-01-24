@@ -28,13 +28,6 @@
 
 
 /*Footer*/
-footer {
-    position: absolute;
-    margin: 0;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-}
 
 footer a{
     color: #3C8732;
