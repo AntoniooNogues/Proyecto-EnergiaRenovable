@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/inicio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
@@ -25,13 +25,16 @@
             <div class="collapse navbar-collapse" id="navbarButtonsExample">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Inicio</a>
+                        <a class="nav-link text-dark" href="inicio.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="compromiso.html">Compromiso</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="tarifas.html">Tarifa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="luz.html">Luz</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="placas.html">Placas Solares</a>
@@ -46,16 +49,143 @@
             </div>
         </div>
     </nav>
+
+
     <!--Main Content-->
     <main>
-        <div id="contenedor_intro">
-            <div class="caja_general">
-                <p>Únete a la revolución con NovaEnergía: Transformamos tu energía en un futuro sostenible y brillante</p>
-                <p>Unimos fuerzas con las energías del futuro</p>
-                <p>Cada día multiplicamos los ahorros de nuestros clientes. Reforzamos nuestra apuesta por ellos, ampliando las ventajas de nuestros innovadores Planes Energía.</p>
-                <p style="color: #34B22A; font-weight: bold; ">NovaEnergía: Iluminando el Futuro con Innovación Renovable</p>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <image href="../imagenes/carrusel1.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <div class="bolder mb-2">
+                                <span>Únete a la revolución con NovaEnergía: Transformamos tu energía en un futuro sostenible y brillante.</span>
+                            </div>
+                            <div class="cont_especial"><p>Unimos fuerzas con las energías del futuro. </p></div>
+                            <div class="cont_especial"><p>Cada día multiplicamos los ahorros de nuestros clientes. Reforzamos nuestra apuesta por ellos, ampliando las ventajas de nuestros innovadores Planes Energía</p></div>
+                            <div class="texto_verde"><span>NovaEnergía: Iluminando el Futuro con Innovación Renovable</span></p></div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <image href="../imagenes/carrusel2.jpeg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"/>
+                    </svg>
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                        <h1 class="verde ">Descubre la Alegría Infinita: La Experiencia NovaEnergia</h1>
+                        <p class="text-white cont_especial">En NovaEnergia, estamos comprometidos no solo a proporcionar energía confiable y sostenible, sino también a cultivar la felicidad entre nuestros clientes. Nuestro enfoque va más allá de simplemente encender luces; se trata de iluminar vidas y encender sonrisas...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <image href="../imagenes/carrusel3.jpeg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"/>
+                    </svg>
+                    <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1 class="verde">NovaEnergia: Energía para un Mañana Mejor</h1>
+                        <p class="text-white cont_especial">Los valores de NovaEnergia están arraigados en un compromiso inquebrantable con la sostenibilidad y la responsabilidad ambiental. Reconocemos que nuestra operación no solo afecta a nuestros clientes y empleados, sino también al mundo que compartimos y las generaciones futuras que heredarán nuestra tierra. Por lo tanto, hemos adoptado una serie de valores fundamentales que reflejan nuestro compromiso con la sostenibilidad.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <section class="py-3 py-md-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 col-xl-8 col-xxl-7">
+                        <div class="row gy-4">
+                            <div class="col-12">
+                                <div class="tarjeta_grande">
+                                    <h1 class="text-center mb-4" id="planes">Planes disponibles</h1>
+                                    <div class="row">
+                                        <div class="col-sm-6 mb-3 mb-sm-0">
+                                            <a href="../HTML/luz.html">
+                                                <div class="card widget-card border-light shadow-sm tarjetas">
+                                                    <img src="../imagenes/Trueno.png" class="logos" alt="Imagen" style="margin: left 15px;">
+                                                    <div class="card-body p-4">
+                                                        <h5 class="card-text">LUZ</h5>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <a href="../HTML/placas.html">
+                                                <div class="card widget-card border-light shadow-sm tarjetas">
+                                                    <img src="../imagenes/Placa.png" class="logos" alt="Imagen">
+                                                    <div class="card-body p-4">
+                                                        <h5 class="card-text">PLACA SOLAR</h5>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="container px-4 py-5" id="featured-3">
+            <h2 class="pb-2 text-center">Cámbiate ya a NovaEnergia</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <svg class="bi" width="93px" height="93px">
+                            <image href="../imagenes/tierra.png"/>
+                        </svg>
+                    </div>
+                    <h2 class="text-center fuenteNegrita">Energía<br>100% verde</h2>
+                    <div class="texto-container">
+                        <p>En NovaEnergia somos sostenibles, como todos nuestros Planes a tu medida.</p>
+                    </div>
+                </div>
+                <div class="feature col">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <svg class="bi" width="93px" height="93px">
+                            <image href="../imagenes/cascos.png"/>
+                        </svg>
+                    </div>
+                    <h2 class="text-center fuenteNegrita">Atención personalizada</h2>
+                    <div class="texto-container">
+                        <p>Te atendemos por los canales digitales (app y web) y en el teléfono de atención gratuita</p>
+                    </div>
+                </div>
+                <div class="feature col">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <svg class="bi" width="93px" height="93px">
+                            <image href="../imagenes/cerdito.png"/>
+                        </svg>
+                    </div>
+                    <h2 class="text-center fuenteNegrita">Ahorra con los <br> planes a tu <br>medida</h2>
+                    <div class="texto-container">
+                        <p>Tenemos un Plan hecho para ti. Solo tienes que querer ahorrar.</p>
+                    </div>
+                </div>
             </div>
         </div>
+        
     </main>
 
     <!-- Footer-->
@@ -69,7 +199,7 @@
                 <a href="" class="d-inline">FACEBOOK</a>    
             </section>
         </div>        
-        <div class="text-center" style="color: #3C8732;">
+        <div class="text-center" style="color: #3C8732; margin-bottom: 5px;">
           © 2024 Copyright:
           <a href="inicio.html" style="color: #3C8732; font-weight: bold; text-decoration: none;">NovaEnergia</a>
         </div>
