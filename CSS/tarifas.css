@@ -1,0 +1,49 @@
+/*Header*/
+
+#navbarButtonsExample a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+#header_lista:hover{
+    font-weight: bolder;
+}
+#lista_header{
+    font-family: 'Poppins', sans-serif;
+}
+
+#area_cliente {
+    background-color: #A3DA9B;
+    transition: background 1s; /* Cambié background-color a background */
+    width: 165px; 
+    height: 58px; 
+    border-radius: 10px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-decoration: none;
+}
+
+#area_cliente:hover {
+    background: linear-gradient(180deg, rgba(67,138,57,1) 12%, rgba(90,184,76,1) 35%, rgba(90,191,77,1) 72%, rgba(115,192,104,1) 94%, rgba(163,218,155,1) 100%);
+}
+
+/*Footer*/
+
+footer a{
+    color: #3C8732;
+}
+footer a:hover{
+    color: #2b5526;
+    font-weight: bolder;
+}
+footer a:visited{
+    color: #1d3a1a;
+}
+
+footer p{
+    color: #3C8732;
+}
+footer p:hover{
+    color: #2b5526;
+    font-weight: bolder;
+}
