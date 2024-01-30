@@ -26,6 +26,9 @@
     background: linear-gradient(180deg, rgba(67,138,57,1) 12%, rgba(90,184,76,1) 35%, rgba(90,191,77,1) 72%, rgba(115,192,104,1) 94%, rgba(163,218,155,1) 100%);
 }
 
+.tarjetas_inicio:hover{
+  color: #000;
+}
 
 /*Footer*/
 
@@ -111,20 +114,22 @@ footer p:hover{
 }
 
 .logos{
-  height: 59px;
-  width: 59px;
-  margin-left: 25px;
+  height: 62px;
+  width: 62px;
   margin-top: 5%;
 }
 .tarjetas{
   border-radius: 5px;
   border: 1px solid #000;
-  background: #FFF;
+  background: #ffffff69;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .tarjeta_grande{
   border-radius: 5px;
-  background: #A3DA9B;
+  background: #00000048;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   padding: 30px;
   margin-bottom: 20px;
