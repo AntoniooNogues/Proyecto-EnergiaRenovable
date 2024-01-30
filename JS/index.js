@@ -10,3 +10,18 @@ function mostrarContrasena() {
         mostrarContrasenaBtn.textContent = "Mostrar";
     }
 }
+
+function validarCredenciales() {
+        var correo = document.getElementById('correo').value;
+        var contrasena = document.getElementById('contrasena').value;
+        if ((correo === 'usuario@gmail.com' || correo === 'usuario') && contrasena === 'usuario') {
+            alert('Validacion del usuario correcta');
+            setTimeout(function() {
+                window.location.href = '/Proyecto/Proyecto-EnergiaRenovable/HTML/cliente.html';
+            }, 1000);
+        } else {
+            alert('Credenciales incorrectas. Por favor, inténtalo de nuevo.');
+        }
+        
+}
+
