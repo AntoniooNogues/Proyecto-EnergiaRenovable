@@ -1,0 +1,38 @@
+main{
+    font-family: Poppins;
+}
+.imagenes_fondo{
+    height: 600px;
+    margin-bottom: 100px;
+    background-size: cover;
+    background-position: center;
+}
+div#ECORESIDENCIAL{
+    background-image: url(../imagenes/planECOResi.png);
+}
+div#ECONEGOCIOS{
+    background-image: url(../imagenes/planECONego.jpg);
+}
+div#ECOINDUSTRIA{
+    background-image: url(../imagenes/planECOIndus.jpg);
+}
+div#PLANSOLAREMPRENDE2{
+    background-image: url(../imagenes/PlanSolarEmpre.jpg);
+}
+div#PLANSOLAREMPRENDE4{
+    background-image: url(../imagenes/PlanSolarEmpre2.jpg);
+}
+.intro{
+    color: #326b2a;
+}
+.div_padre{
+    border-radius: 15px !important;
+    background: rgba(255, 255, 255, 0.75)!important;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset !important; 
+}
+.div_padre:hover{
+    box-shadow: 0px 0px 100px 0px #72c167 !important;
+}
+ul.listas li{
+    margin: 0
+}

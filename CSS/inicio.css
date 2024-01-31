@@ -1,4 +1,7 @@
 /*Header*/
+main{
+  font-family: Poppins;
+}
 #navbarButtonsExample a{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -50,6 +53,46 @@ footer p:hover{
     color: #2b5526;
     font-weight: bolder;
 }
+
+/*Preguntas Frecuentes  */
+.preguntas{
+  font-size: 32px;
+  font-weight: 700;
+}
+.accordion-item {
+  background-color: black;
+  box-shadow: none !important;
+}
+
+.accordion-button {
+  color: black !important;
+  background-color: rgb(255, 255, 255) !important;
+  box-shadow: none !important;
+}
+
+.accordion-button.collapsed {
+  color: black !important;
+  background-color: white !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black !important;
+  background-color: white !important;
+  box-shadow: none !important;
+}
+
+.accordion-collapse {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  box-shadow: none !important;
+}
+.accordion-body{
+  background-color: #a3da9b80;
+}
+
+
+
 
 
   
