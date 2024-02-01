@@ -25,6 +25,40 @@
 #area_cliente:hover {
     background: linear-gradient(180deg, rgba(67,138,57,1) 12%, rgba(90,184,76,1) 35%, rgba(90,191,77,1) 72%, rgba(115,192,104,1) 94%, rgba(163,218,155,1) 100%);
 }
+/*Main*/
+main{
+    font-family: Poppins;
+}
+
+div.tarjetas{
+    border-radius: 25px !important;
+}
+div.tarjetas#verde {
+    background-color: #9DCC97;
+}
+div.tarjetas h3{
+    font-weight: 800;
+    padding: 10px 0 10px 0;
+    font-size: 24px;
+}
+div.tarjetas h2{
+    font-weight: 800;
+    font-size: 24px;
+}
+div.tarjetas p{
+    font-weight: 590;
+    padding: 0 0 2px 0;
+    font-size: 18px;
+}
+.progress-bar-animated {
+    background-color: #488840 !important;
+}
+
+#lineChart {
+    height: 350px;
+    margin-bottom: 30px;
+}
+
 /*Footer*/
 
 footer a{

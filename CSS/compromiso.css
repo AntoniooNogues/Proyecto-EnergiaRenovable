@@ -50,6 +50,9 @@ footer p:hover{
 
 /*IMAGEN COMPROMISO*/
 /*Carrusel*/
+main{
+    font-family: Poppins;
+}
 .carousel {
     margin-bottom: 1rem;
   }
@@ -75,8 +78,8 @@ footer p:hover{
     font-family: Poppins;
     font-size: 22px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 20px; /* 90.909% */
+    font-weight: 500;
+    line-height: 25px; /* 90.909% */
     letter-spacing: 2px;
     margin-top: 15px;
 }
@@ -99,6 +102,36 @@ footer p:hover{
     line-height: 25px; /* 125% */
     letter-spacing: 2px;
 }
-  
+.bienvenida{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#bienvenida{
+    background-image: url(../imagenes/bienvenida.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+.sobreNosotros{
+    margin: 15%;
+    margin-bottom: 0;
+    text-align: justify;
+    
+}
+.sobreNosotros h3{
+    font-size: 25px;
+    font-weight: 700;
+}
+.sobreNosotros p{
+    font-size: 18px;
+}
 
-  
+h2#sobreNova{
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 75px;
+}
+.mariposa {
+    background: linear-gradient(to bottom, rgba(163, 218, 155, 0.178), rgba(255, 255, 255, 0)); 
+    background: linear-gradient(to top,  rgba(255, 255, 255, 0), rgba(163, 218, 155, 0.356),); 
+}

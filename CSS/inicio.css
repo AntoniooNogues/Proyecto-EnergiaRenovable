@@ -88,14 +88,9 @@ footer p:hover{
   box-shadow: none !important;
 }
 .accordion-body{
-  background-color: #a3da9b80;
+  background-color: rgba(163, 218, 155, 0.178);
 }
 
-
-
-
-
-  
 /*Carrusel*/
   .carousel {
     margin-bottom: 1rem;
