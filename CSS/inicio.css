@@ -15,19 +15,15 @@ main{
 
 #area_cliente {
     background-color: #A3DA9B;
-    transition: background 1s; /* Cambié background-color a background */
-    width: 165px; 
-    height: 58px; 
-    border-radius: 10px; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    text-decoration: none;
+    transition: background 1s;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
-#area_cliente:hover {
-    background: linear-gradient(180deg, rgba(67,138,57,1) 12%, rgba(90,184,76,1) 35%, rgba(90,191,77,1) 72%, rgba(115,192,104,1) 94%, rgba(163,218,155,1) 100%);
-}
+
 
 .tarjetas_inicio:hover{
   color: #000;
@@ -58,6 +54,8 @@ footer p:hover{
 .preguntas{
   font-size: 32px;
   font-weight: 700;
+  text-align: justify;
+  margin-bottom: 15px;
 }
 .accordion-item {
   background-color: black;
@@ -88,7 +86,7 @@ footer p:hover{
   box-shadow: none !important;
 }
 .accordion-body{
-  background-color: rgba(163, 218, 155, 0.178);
+  background-color: rgba(71, 228, 47, 0.288);
 }
 
 /*Carrusel*/
@@ -101,7 +99,7 @@ footer p:hover{
   }
   
   .carousel-item {
-    height: 32rem;
+    height: 36rem;
   }
   .carousel-item > img {
     position: absolute;
@@ -211,10 +209,28 @@ footer p:hover{
   margin-top: 5%;
 }
 #featured-3{
-  background: rgba(246, 255, 247, 0.80);
+  background: rgb(246, 255, 247);
   box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.25);
   margin-bottom:50px;
   padding: 55px;
+}
+#cb-cookie-banner { 
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 999; 
+  border-radius: 0; 
+  display: none; 
+  background-color: #A3DA9B; 
+}
+#cb-cookie-banner a{
+  color: #000;
+}
+.boton_cookies{
+  background-color: #1d3a1a !important;
+  border: #000 !important;
+  padding: 10px !important;
 }
 
 /*RESPONSIVE*/

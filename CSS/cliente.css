@@ -10,21 +10,21 @@
     font-family: 'Poppins', sans-serif;
 }
 
-#area_cliente {
+.botonVerde {
     background-color: #A3DA9B;
-    transition: background 1s; /* Cambié background-color a background */
-    width: 165px; 
-    height: 58px; 
-    border-radius: 10px; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    text-decoration: none;
+    transition: background 1s;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 10px;
 }
 
-#area_cliente:hover {
-    background: linear-gradient(180deg, rgba(67,138,57,1) 12%, rgba(90,184,76,1) 35%, rgba(90,191,77,1) 72%, rgba(115,192,104,1) 94%, rgba(163,218,155,1) 100%);
+.botonVerde p {
+    margin: 0;
 }
+
 /*Main*/
 main{
     font-family: Poppins;
@@ -50,6 +50,16 @@ div.tarjetas p{
     padding: 0 0 2px 0;
     font-size: 18px;
 }
+.consumo{
+    color: #387a2e;
+}
+.text-red {
+      color: red;
+    }
+.tarjetas.text-red {
+    background-color: rgb(226, 55, 55) !important;
+    color: black;
+}
 .progress-bar-animated {
     background-color: #488840 !important;
 }
@@ -57,25 +67,49 @@ div.tarjetas p{
 #lineChart {
     height: 350px;
     margin-bottom: 30px;
+    
 }
 
+#kWh{
+    font-size: 38px;
+    font-weight: 300;
+    color: #387a2e ;
+}
+#estadoPago{
+    font-weight: 900;
+}
+.estadoDePago{
+    font-weight: 600;
+}
 /*Footer*/
 
-footer a{
+footer {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
     color: #3C8732;
 }
-footer a:hover{
+
+footer a:hover {
     color: #2b5526;
     font-weight: bolder;
 }
-footer a:visited{
+
+footer a:visited {
     color: #1d3a1a;
 }
 
-footer p{
+footer p {
     color: #3C8732;
 }
-footer p:hover{
+
+footer p:hover {
     color: #2b5526;
     font-weight: bolder;
 }
+
+

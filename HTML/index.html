@@ -39,10 +39,7 @@
                     
                 </ul>
                 <a href="AreaCliente.html" id="area_cliente" class="btn btn-outline-light text-dark ms-2">
-                    <span style="display: flex; align-items: center;">
-                        Area Cliente
-                        <img src="../imagenes/logo_cliente.png" width="35" height="35" alt="logo de un monigote representado a una persona" style="margin-left: 5px;">
-                    </span>
+                    <span style="display: flex; align-items: center;">Area Cliente</span>
                 </a>
             </div>
         </div>
@@ -107,43 +104,7 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <section class="py-3 py-md-5">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-lg-10 col-xl-8 col-xxl-7">
-                        <div class="row gy-4">
-                            <div class="col-12">
-                                <div class="tarjeta_grande">
-                                    <h1 class="text-center mb-4" id="planes">Planes disponibles</h1>
-                                    <div class="row">
-                                        <div class="col-sm-6 mb-3 mb-sm-0 recuadro_inicio">
-                                            <a href="../HTML/productos.html#luz" class="tarjetas_inicio">
-                                                <div class="card widget-card border-light shadow-sm tarjetas">
-                                                    <img src="../imagenes/Trueno.png" class="logos" alt="Imagen">
-                                                    <div class="card-body p-4">
-                                                        <h5 class="card-text">LUZ</h5>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-6 recuadro_inicio">
-                                            <a href="../HTML/productos.html#placas" class="tarjetas_inicio">
-                                                <div class="card widget-card border-light shadow-sm tarjetas">
-                                                    <img src="../imagenes/Placa.png" class="logos" alt="Imagen">
-                                                    <div class="card-body p-4">
-                                                        <h5 class="card-text">PLACA SOLAR</h5>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
         
         <div class="container-fluid px-4 py-5" id="featured-3">
             <h2 class="pb-2 text-center">Cámbiate ya a NovaEnergia</h2>
@@ -183,12 +144,14 @@
                 </div>
             </div>
         </div>
-        <div class="container py-5">
+        
+
+        <div class="container mb-5">
             <h1 class="mb-4 preguntas">Preguntas Frecuentes:</h1>
             <div class="accordion" id="accordionFAQ">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button text-justify" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             ¿Cómo puedo cambiar a NovaEnergia?
                         </button>
                     </h2>
@@ -242,17 +205,19 @@
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionFAQ">
                         <div class="accordion-body">
-                            
-Puedes pagar tu factura de NovaEnergia de diversas formas, incluyendo transferencia bancaria, tarjeta de crédito o débito, y a través de nuestra plataforma en línea. Nos esforzamos por ofrecer opciones de pago convenientes y seguras para todos nuestros clientes
+                            Puedes pagar tu factura de NovaEnergia de diversas formas, incluyendo transferencia bancaria, tarjeta de crédito o débito, y a través de nuestra plataforma en línea. Nos esforzamos por ofrecer opciones de pago convenientes y seguras para todos nuestros clientes
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-            
-        
-        
-        
+        <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
+            🍪 Este sitio web utiliza cookies para garantizar que obtengas la mejor experiencia en nuestro sitio web.
+            <a href="cookies.html" target="blank">Mas Información</a>
+            <button type="button" class="btn btn-primary btn-sm ms-3 boton_cookies" onclick="window.cb_hideCookieBanner()">
+                Lo tengo
+            </button>
+        </div>
     </main>
 
     <!-- Footer-->
@@ -272,7 +237,7 @@ Puedes pagar tu factura de NovaEnergia de diversas formas, incluyendo transferen
         </div>
       </footer>
       
-
+<script src="../JS/inicio.js"></script>
 </body>
 </html>
 

@@ -35,26 +35,44 @@ body {
 
 /*Footer*/
 
-footer a{
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
     color: #3C8732;
 }
-footer a:hover{
+
+footer a:hover {
     color: #2b5526;
     font-weight: bolder;
 }
-footer a:visited{
+
+footer a:visited {
     color: #1d3a1a;
 }
 
-footer p{
+footer p {
     color: #3C8732;
 }
-footer p:hover{
+
+footer p:hover {
     color: #2b5526;
     font-weight: bolder;
-}
-.custom-btn{
-    color: #3C8732;
 }
 
 

@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </head>
-    <script src="../JS/usuario.js"></script>
+    
     <script src="https://kit.fontawesome.com/2eb7a633b0.js" crossorigin="anonymous"></script>
     <title>Zona Clientes</title>
 </head>
@@ -41,12 +42,10 @@
                     </li>
                     
                 </ul>
-                <a href="" id="area_cliente" class="btn btn-outline-light text-dark ms-2">
-                    <span style="display: flex; align-items: center;">
-                        Area Cliente
-                        <img src="../imagenes/logo_cliente.png" width="35" height="35" alt="logo de un monigote representado a una persona" style="margin-left: 5px;">
-                    </span>
-                </a>
+                <div id="nombreUsuario" class="contenedor botonVerde">
+                    <p>Bienvenido, <span class="nombreSpan"> </span></p>
+                </div>
+                </a>               
             </div>
         </div>
     </nav>
@@ -54,6 +53,7 @@
     <!-- Main -->
     <main>
         <div class="container">
+            <h2 class="mb-5">Bienvenido <span class="nombreSpan"></span></h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-3 justify-content-center mb-4">
                 <div class="col mb-3">
                     <div class="card mb-3 rounded-3 shadow-sm h-100 tarjetas" id="verde">
@@ -70,19 +70,42 @@
                         <div class="card-body d-flex flex-column">
                             <h2>Consumo Mensual: </h2>
                             <b>A dia <span id="date"></span>.</b>
-                            <h1 class="mt-2">167kWh</h1>
+                            <h1 class="mt-2 consumo">181kWh</h1>
                             <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="61" aria-valuemin="0" aria-valuemax="100">
                                 <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 61%"></div>
                             </div>
-                            <p id="output"></p>
+                            <span id="container" class="mb-0">
+                                <p id="1" style="float: left;"></p>
+                                <p id="2" style="float: right;"></p>
+                            </span>
+                            <p>Domicilio: C/ Goya, N.º 70 Sevilla</p>
+                            <p class="mt-0">Plan Contratado: <b>EcoResidencial</b></p>
+                            <p>Limite Configurado: <span class="text-danger">230kWh</span></p>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-3">
                     <div class="card mb-3 rounded-3 shadow-sm h-100 tarjetas">
                         <div class="card-body d-flex flex-column">
-                            
-                            
+                            <h2>Ultima Factura: </h2>
+                            <h1 class="mt-2">74,43€ <span id="kWh" style="float: right;">203 kWh</span></h1>
+                            <span id="container" style="margin-bottom: 0;">
+                                <p style="margin-bottom: 0px;"><b>Fecha de consumo:</b></p>
+                                <p style="float: left;">17 de Diciembre</p>
+                                <p style="float: right;">17 de Enero</p>
+                            </span>
+                            <p><b>Estado: </b> <span id="estadoPago" style="float: right">PAGADA</span></p>
+                            <div class="d-flex align-items-center mt-1">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                                        <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
+                                        <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="mb-0 ms-2">La factura ha aumentado un 8% con respecto a la factura anterior</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -95,6 +118,115 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="container mt-5 mb-5">
+                <h1 class="text-center mb-4">Tabla de Facturas</h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Factura</th>
+                            <th>Fecha</th>
+                            <th>Importe</th>
+                            <th>Estado</th>
+                            <th>Factura</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Factura Enero 23</td>
+                            <td>17/01/2023</td>
+                            <td>67,56€</td>
+                            <td><span class="estadoDePago">PAGADA</span></td>
+                            <td><a href="../Facturas/FacturaEnero23.pdf">Enlace</a></td>
+                        </tr>
+                        <tr>
+                            <td>Factura Febrero 23</td>
+                            <td>17/02/2023</td>
+                            <td>56,30€</td>
+                            <td><span class="estadoDePago">PAGADA</span></td>
+                            <td><a href="../Facturas/FacturaFebrero23.pdf">Enlace</a></td>
+                        </tr>
+                        <tr>
+                            <td>Factura Marzo 23</td>
+                            <td>17/03/2023</td>
+                            <td>59,77€</td>
+                            <td><span class="estadoDePago">PAGADA</span></td>
+                            <td><a href="../Facturas/FacturaMarzo23.pdf">Enlace</a></td>
+                        </tr>
+                        <tr>
+                            <td>Factura Abril 23</td>
+                            <td>17/04/2023</td>
+                            <td>60,98€</td>
+                            <td><span class="estadoDePago">PAGADA</span></td>
+                            <td><a href="../Facturas/FacturaAbril23.pdf">Enlace</a></td>
+                        </tr>
+                        <tr>
+                            <td>Factura Mayo 23</td>
+                            <td>17/05/2023</td>
+                            <td>68,25€</td>
+                            <td><span class="estadoDePago">PAGADA</span></td>
+                            <td><a href="../Facturas/FacturaMayo23.pdf">Enlace</a></td>
+                        </tr>
+                        <tr>
+                            <td>Factura Junio 23</td>
+                            <td>17/06/2023</td>
+                            <td>89,70€</td>
+                            <td><span class="estadoDePago">PAGADA</span></td>
+                            <td><a href="../Facturas/FacturaJunio23.pdf">Enlace</a></td>
+                        </tr>
+                        <tr>
+                            <td>Factura Julio 23</td>
+                            <td>17/07/2023</td>
+                            <td>81,89€</td>
+                            <td><span class="estadoDePago">PAGADA</span></td>
+                            <td><a href="../Facturas/FacturaJulio23.pdf">Enlace</a></td>
+                        </tr>
+                        <tr>
+                            <td>Factura Agosto 23</td>
+                            <td>17/08/2023</td>
+                            <td>84,64€</td>
+                            <td><span class="estadoDePago">PAGADA</span></td>
+                            <td><a href="../Facturas/FacturaAgosto23.pdf">Enlace</a></td>
+                        </tr>
+                        <tr>
+                            <td>Factura Septiembre 23</td>
+                            <td>17/09/2023</td>
+                            <td>65,25€</td>
+                            <td><span class="estadoDePago">PAGADA</span></td>
+                            <td><a href="../Facturas/FacturaSeptiembre23.pdf">Enlace</a></td>
+                        </tr>
+                        <tr>
+                            <td>Factura Octubre 23</td>
+                            <td>17/10/2023</td>
+                            <td>53,98€</td>
+                            <td><span class="estadoDePago">PAGADA</span></td>
+                            <td><a href="../Facturas/FacturaOctubre23.pdf">Enlace</a></td>
+                        </tr>
+                        <tr>
+                            <td>Factura Noviembre 23</td>
+                            <td>17/11/2023</td>
+                            <td>60,13€</td>
+                            <td><span class="estadoDePago">PAGADA</span></td>
+                            <td><a href="../Facturas/FacturaNoviembre23.pdf">Enlace</a></td>
+                        </tr>
+                        <tr>
+                            <td>Factura Diciembre 23</td>
+                            <td>17/12/2023</td>
+                            <td>72,94€</td>
+                            <td><span class="estadoDePago">PAGADA</span></td>
+                            <td><a href="../Facturas/FacturaDiciembre23.pdf">Enlace</a></td>
+                        </tr>
+                        <tr>
+                            <td>Factura Enero 24</td>
+                            <td>17/01/2024</td>
+                            <td>74,43€</td>
+                            <td><span class="estadoDePago">PAGADA</span></td>
+                            <td><a href="../Facturas/FacturaEnero24.pdf">Enlace</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
         </div>
     </main>
     
@@ -114,5 +246,7 @@
           <a href="index.html" style="color: #3C8732; font-weight: bold; text-decoration: none;">NovaEnergia</a>
         </div>
     </footer>
+    <script src="../JS/usuario.js"></script>
+    <script src="../JS/login.js"></script>
 </body>
 </html>
