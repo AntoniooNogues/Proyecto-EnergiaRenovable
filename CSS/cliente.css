@@ -3,6 +3,9 @@
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
+#navbarButtonsExample a:hover{
+    font-weight: 990;
+}
 #header_lista:hover{
     font-weight: bolder;
 }
@@ -10,19 +13,23 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 .botonVerde {
     background-color: #A3DA9B;
-    transition: background 1s;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
     margin-left: 10px;
+    font-family: Poppins;
 }
 
 .botonVerde p {
     margin: 0;
+}
+.botonVerde:hover{
+    font-weight: 990;
 }
 
 /*Main*/
